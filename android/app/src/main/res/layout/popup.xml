@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:background="@drawable/popup_bg">
+    <ImageView android:id="@+id/popup_icon"
+        android:layout_width="48dp" android:layout_height="48dp"
+        android:scaleType="fitCenter" android:layout_marginEnd="12dp"/>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:orientation="vertical">
+        <TextView android:id="@+id/popup_app"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" android:textSize="11sp" android:alpha="0.7"
+            android:maxLines="1" android:ellipsize="end"/>
+        <TextView android:id="@+id/popup_title"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" android:textSize="15sp" android:textStyle="bold"
+            android:maxLines="1" android:ellipsize="end" android:layout_marginTop="2dp"/>
+        <TextView android:id="@+id/popup_text"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#EEEEEE" android:textSize="13sp"
+            android:maxLines="2" android:ellipsize="end" android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</LinearLayout>
